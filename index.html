@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="body" onload="idleAnimationStart(); createBoxes();">
+    <div class="background" id="background">
+        <img src="images/Idle__000.png" alt="character" class="character" id="boy"> 
+    </div>
+
+    <div class="score" id="score">0</div>
+
+    <div class="end" id="end">
+        <div style="color: aqua;">Game Over</div>
+        <div style="color: yellow;">Ypur Score</div>
+        <div style="color: burlywood;" id="endscore">Score = 0</div>
+
+        <button id="tryAgainBtn" class="btn">Try Again</button>
+
+    </div>
+
+
+
+    <div class="container">
+        <div class="card" id="card">   
+            <div class="header">
+                <div class="image">
+                    <svg aria-hidden="true" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"
+                            stroke-linejoin="round" stroke-linecap="round"></path>
+                    </svg>
+                </div>
+                <div class="content">
+                    <span class="title">NOTICE</span>
+                    <p class="message">තරගය ආරම්භ කිරීමට 'ENTER' key එක සහ 'SPACE' key එක ඔබන්න. Jump action එක සදහා 'SPACE' key එක ඔබන්න.</br>
+                        මෙම game එක Demo version එකක් වන බැවින් ඇතැම් විට දෝෂ ඇති විය හැකිය.</br> ඇතැම් විට Game එක අවසානයේ 'Try Again' click කල විට තරගය නැවත ආරම්භ වූයේ නැතිනම් කිහිප
+                        වතාවක් 'Try Again' බටන් එක click කරන්න. නැතිනම් web page එක refresh කරන්න
+                    </p>
+                </div>
+                <div class="actions">
+                    <button class="desactivate" type="button" id="closeBtn">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <button onclick="playAudio()">Play Audio</button>
+    <audio id="backgroundAudio" loop>
+        <source src="images/game music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <script>
+    function playAudio() {
+        var audio = document.getElementById('backgroundAudio');
+        audio.play();
+    }
+    </script>
+    
+
+
+
+
+    
+
+</body>
+</html>
+    
