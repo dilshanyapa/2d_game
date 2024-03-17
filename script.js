@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function boxAnimation() {
         if (!gameOver) {
-            for (var i = 0; i <= 10; i++) {
+            for (var i = 0; i <= 1000; i++) {
                 var box = document.getElementById('box' + i);
                 var currentBoxMarginLeft = parseInt(getComputedStyle(box).marginLeft);
                 var newMarginLeft = currentBoxMarginLeft - 35;
