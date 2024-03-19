@@ -19,7 +19,7 @@
     bottom: 10%; 
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .character {
         height: 50%; 
         max-height: 100px; 
